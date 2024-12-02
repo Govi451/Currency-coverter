@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SwapCurrency</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+		.Container{
+			min-height: 100vh;
+            background-color: purple;
+            max-width: 80vw;
+            margin: auto;
+		}
+		footer{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+     <nav>
+     	<div class="logo">SwapCurrency</div>
+     	<ul>
+     		<li><a href="/home">Home</a></li>
+     		<li><a href="/about">About Us</a></li>
+     		<li><a href="/Contact">Contact</a></li>
+     		
+     	</ul>
+     </nav>
+     <div class="Container">
+     	<h1>Currency  conversion</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity: </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Choose a currency: </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+
+           
+        </form>
+<div class="output">
+    <h2>Coverted Values of Currencies</h2>
+    <table>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Currency code</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    </table>
+</div>
+     </div>
+     <footer>
+     	Copyright &copy; All Rights Reserved
+     </footer>
+     <script type="text/javascript">
+     	
+     </script>
+     <script src="index.js"></script>
+</body>
+</html>
